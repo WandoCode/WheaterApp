@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Enriqueta", serif;
+  background: linear-gradient(
+    180deg,
+    #3066da 11.46%,
+    rgba(48, 102, 218, 0.5) 40.63%,
+    rgba(48, 102, 218, 0.65) 70.83%,
+    #3066da 100%
+  );
+  font-size: 19px;
+  color: rgba(252, 254, 252, 1);
+}
+
+header {
+  background-color: #224ca4;
+  display: flex;
+  padding-left: 75px;
+  padding-right: 35px;
+  justify-content: space-between;
+  align-items: center;
+  height: 95px;
+}
+
+.head-right {
+  display: flex;
+}
+.main-name {
+  font-family: "El Messiri", sans-serif;
+  color: #fbe504;
+  font-size: 48px;
+}
+main {
+  width: 1200px;
+  margin: auto;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#location-display {
+  background-color: #224ca4;
+  align-self: flex-start;
+  height: 60px;
+  width: 450px;
+  font-weight: 600;
+  font-size: 36px;
+  color: #bebebe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-value {
+  background: linear-gradient(
+    180deg,
+    #224ca4 29.69%,
+    rgba(34, 76, 164, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  height: 777px;
+}
+
+.upper-wraper {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+}
+
+.medium-wraper {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lower-wraper {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-around;
+}
+.lower-wraper-div {
+  display: flex;
+  align-items: center;
+}
+
+.temp-display {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#description {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(252, 254, 252, 1);
+}
+
+.third-height {
+  height: 33%;
+}
+
+.btn-unit {
+  border: none;
+  width: 92px;
+  height: 44px;
+  background-color: #224ca4;
+  font-family: "Enriqueta", serif;
+  font-weight: medium;
+  font-size: 18px;
+  color: #b0b2b5;
+}
+
+.unit-selected {
+  background: #3066da;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+#btn-search {
+  height: 38px;
+  width: 48px;
+  filter: invert(71%) sepia(9%) saturate(84%) hue-rotate(177deg) brightness(99%)
+    contrast(91%);
+}
+
+#location {
+  height: 46px;
+  width: 190px;
+  background: rgba(176, 178, 181, 0.1);
+  box-shadow: inset 0px 0px 10px rgba(231, 231, 231, 0.58);
+  border-radius: 26px;
+  border: none;
+  padding: 9px 17px;
+  font-family: "Enriqueta", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(231, 231, 231, 0.8);
+}
+
+#location:focus {
+  outline: none;
+}
+
+.unit-choice-wrap {
+  display: flex;
+  align-items: center;
+}
+
+#location-choice {
+  display: flex;
+  align-items: center;
+}
+
+#unit-choice {
+  margin-right: 25px;
+}
+
+#weather-icon {
+  height: 125px;
+  width: auto;
+}
+
+#img-wrapper {
+  margin-left: 55px;
+
+  margin-right: 45px;
+}
+
+.medium-icon {
+  height: 58px;
+  width: auto;
+  filter: invert(93%) sepia(11%) saturate(285%) hue-rotate(70deg)
+    brightness(112%) contrast(99%);
+  margin-top: 20px;
+}
+
+.small-icon {
+  height: 41px;
+  width: auto;
+  filter: invert(93%) sepia(11%) saturate(285%) hue-rotate(70deg)
+    brightness(112%) contrast(99%);
+  margin-right: 20px;
+}
+
+#current-temp {
+  color: #fbe504;
+  font-size: 64px;
+}
+
+.big-unit {
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.real-fell-div {
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+}
+#real-feel {
+  margin-right: 7px;
+  margin-left: 10px;
+}
+
+.no-marge {
+  margin: 0;
+}
+
+.value-font {
+  margin-right: 7px;
+  font-size: 36px;
+}
+
+#wind-unit {
+  font-size: 24px;
+}
+
+.units-temp {
+  font-size: 24px;
+}
+.small-font {
+  font-size: 12px;
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+.temp-wraper {
+  display: flex;
+}

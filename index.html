@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="no-marge">
+    <header>
+      <div class="head-left"><div class="main-name">Easy weather</div></div>
+      <div class="head-right">
+        <div class="unit-choice-wrap">
+          <form id="unit-choice">
+            <input
+              type="button"
+              class="btn-unit unit-selected"
+              id="metric"
+              value="°C"
+            />
+            <input type="button" class="btn-unit" id="imperial" value="°F" />
+          </form>
+        </div>
+        <form id="location-choice">
+          <input
+            type="image"
+            id="btn-search"
+            alt="submit"
+            src="./search_black_24dp.svg"
+          />
+          <label for="location"></label>
+          <input
+            type="text"
+            name="location"
+            id="location"
+            required
+            placeholder="Search a location"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <div id="location-display">Choose a location</div>
+      <div class="display-value">
+        <div class="upper-wraper third-height">
+          <div id="img-wrapper"></div>
+          <span id="description"> </span>
+        </div>
+        <div class="medium-wraper third-height">
+          <div class="temp-display no-marge">
+            <img
+              src="./thermostat_black_24dp.svg"
+              class="medium-icon"
+              alt="temperature icon"
+            />
+            <span id="current-temp"> </span>
+            <span class="units-temp big-unit"></span>
+          </div>
+          <div class="temp-display no-marge real-fell-div">
+            <div>Feels like</div>
+
+            <span id="real-feel"></span>
+            <span class="units-temp medium-unit"></span>
+          </div>
+        </div>
+        <div class="lower-wraper third-height">
+          <div class="lower-wraper-div">
+            <div class="temp-display">
+              <img
+                class="small-icon"
+                src="./air_black_24dp.svg"
+                alt="wind icon"
+              />
+              <span class="value-font" id="wind"></span>
+              <span id="wind-unit"></span>
+            </div>
+          </div>
+          <div class="lower-wraper-div">
+            <div class="temp-display">
+              <img
+                class="small-icon"
+                src="./thermostat_black_24dp.svg"
+                alt="temperature icon"
+              />
+              <div class="min-max-wraper">
+                <div class="temp-wraper">
+                  <div class="small-font">min</div>
+                  <span class="value-font" id="min-temp"> </span>
+                  <span class="units-temp"></span>
+                </div>
+                <div class="temp-wraper">
+                  <div class="small-font">max</div>
+                  <span class="value-font" id="max-temp"> </span>
+                  <span class="units-temp"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
